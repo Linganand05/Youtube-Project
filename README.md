@@ -1,13 +1,25 @@
-How to run the Project
+Step 1: Install Dependencies
+# Install frontend dependencies
 cd front
 npm install
-cd backend
+
+# Install backend dependencies
+cd ../backend
 npm install
-Go to root folder and install below dependecies
+
+Step 2: Setup at the Root Level
+# Go to root folder (if not already)
+cd ..
+
+# Install dev dependency to run both frontend and backend concurrently
 npm install concurrently --save-dev
 
-To run the project add below command in root folder
+Step 3: Start the Project
 npm start
-Note : when we give npm start command then it will concurrently execute both frontend and backend
 
+What Happens
+When you run npm start in root folder it will:
 
+ Start the Backend Server from backend/server.js
+
+ Start the Frontend (Vite) from the front folder
